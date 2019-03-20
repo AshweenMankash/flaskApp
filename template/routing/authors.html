@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Authors Librarys</title>
+        <!-- <link href="css.css" rel="stylesheet"> -->
+        <style>
+            body{
+                margin:0;
+            }
+            li{
+                list-style-type: none;
+                background-color: rgba(0, 0, 0, q.0);
+                padding: 10px;
+            }
+            ul{
+                margin: 0;
+                background-color: #ccc;
+                padding: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: blue;
+            }
+
+        center{
+            padding: 10px;
+            background-color: 
+            black;
+            color: #fff;
+        }
+        </style>
+    </head>
+    <body>
+        <center><h1>Welcome to  Authors Library</h1></center>
+        <ul>
+        {% for author in authors %}
+       
+                <li><a href="{{url_for('author',author=author['name'])}}")>{{author["id"]}} : {{author["name"]}} from {{author["country"]}}</a></li>
+        
+{% endfor %}
+</ul>
+
+<section>
+    {{location.ip}}
+</section>
+
+    </body>
+</html>
