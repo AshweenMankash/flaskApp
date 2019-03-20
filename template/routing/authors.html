@@ -34,7 +34,7 @@
         <ul>
         {% for author in authors %}
        
-                <li><a href="{{url_for('author',author=author['name'])}}")>{{author["id"]}} : {{author["name"]}} from {{author["country"]}}</a></li>
+                <li><a href="{{url_for('author',author=author['name'])}}")>{{author["id"]}} : {{author["name"]}} is from {{author["country"]}}</a></li>
         
 {% endfor %}
 </ul>
